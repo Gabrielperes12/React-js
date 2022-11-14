@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import HelloWorld  from'./components/HelloWorld'
+
 
 function App() {
   var name = 'Gabriel'
@@ -19,6 +21,7 @@ function App() {
      <p>olá, {newname}</p>
      <p>soma: {sum(1,5)}</p>
      <img src={url} alt='minha imagem'/>
+     <HelloWorld/>
      
     </div>
   );
