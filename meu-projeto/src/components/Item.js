@@ -1,8 +1,8 @@
-/*Fragemento*/
-
+/*props avançado*/
 import PropTypes from 'prop-types'
 
-function Item(marca, ano_lancamento){
+/*Fragemento*/
+function Item({marca, ano_lancamento}){
     return(
         <>
         <li>{marca} - {ano_lancamento}</li>
@@ -10,7 +10,14 @@ function Item(marca, ano_lancamento){
     )
 }
 
+/*props avançado*/
 Item.propTypes = {
-    marca: PropTypes.string.isRequired
+    marca: PropTypes.string.isRequired,
+    ano_lancamento: PropTypes.number.isRequired,
 }
-export default Item
+Item.defaultProps = {
+    marca: 'faltou a marca',
+    ano_lancamento: 0,
+}
+
+export default Item 
