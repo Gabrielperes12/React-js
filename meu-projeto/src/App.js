@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWorld  from'./components/HelloWorld'
-
+import SayMyName from './components/sayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
   var name = 'Gabriel'
@@ -22,6 +23,10 @@ function App() {
      <p>soma: {sum(1,5)}</p>
      <img src={url} alt='minha imagem'/>
      <HelloWorld/>
+     
+     {/*props*/}
+     <SayMyName nome='Gabriel'/>
+     <Pessoa nome='Renan' idade='28' profissao='dev'/> 
      
     </div>
   );
