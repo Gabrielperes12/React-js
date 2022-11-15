@@ -1,8 +1,8 @@
-function frase(){
+function Frase(){
     return(
         <div>
-            <p>esse é um componente com uma frase!</p>
+            <p>De Olho na Luta, por Vitor Miranda: Israel Adesanya x Alex Poatan</p>
         </div>
     )
 }
-export  default frase
+export default Frase
