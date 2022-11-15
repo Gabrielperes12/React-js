@@ -3,6 +3,8 @@ import './App.css';
 import HelloWorld  from'./components/HelloWorld'
 import SayMyName from './components/sayMyName';
 import Pessoa from './components/Pessoa';
+import Frase from './components/Frase';
+
 
 function App() {
   var name = 'Gabriel'
@@ -17,6 +19,13 @@ function App() {
   
   return (
     <div className="App">
+     
+    {/*css*/}
+    <h1>Testando css</h1>
+    <Frase/>
+    <Frase/>
+     
+     
      <h1>Olá react</h1>
      <p>meu primeiro projeto</p>
      <p>olá, {newname}</p>
