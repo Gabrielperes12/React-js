@@ -1,5 +1,6 @@
 body{
   padding: 50px;
+  padding-bottom: 500px;
   background-color: rgb(160, 160, 160);
 }
 h1{
@@ -11,5 +12,5 @@ p{
   color: white;
 }
 h2{
-  color: white;
+  color: rgb(97, 97, 97);
 }

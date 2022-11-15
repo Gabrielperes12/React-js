@@ -4,6 +4,7 @@ import HelloWorld  from'./components/HelloWorld'
 import SayMyName from './components/sayMyName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase';
+import List from './components/List';
 
 
 function App() {
@@ -37,6 +38,10 @@ function App() {
      <SayMyName nome='Gabriel'/>
      <Pessoa nome='Renan' idade='28' profissao='dev'/> 
      
+
+    {/*Fragemento*/}
+    <List/>
+
     </div>
   );
 }
