@@ -5,6 +5,8 @@ import SayMyName from './components/sayMyName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase';
 import List from './components/List';
+import Evento from './Evento';
+import Form from './components/Form';
 
 
 function App() {
@@ -20,8 +22,19 @@ function App() {
   
   return (
     <div className="App">
+     {/*eventos com formulários*/}
+     <h1>evento com formulários</h1>
+     <Form/>
      
-    {/*css*/}
+     
+     {/*evento*/}
+     <h1>Testando eventos</h1>
+     <Evento numero={1}/>
+     <Evento numero={2}/>
+    
+    
+    
+     {/*css*/}
     <h1>Testando css</h1>
     <Frase/>
     <Frase/>
