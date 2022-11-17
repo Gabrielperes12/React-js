@@ -1,13 +1,23 @@
-function Evento(numero){
+import Button from "./Components/Eventos/Button"
+
+function Evento(){
     function meuEvento(){
-        console.log(`opa, fui ativado ${numero}`)
+        console.log(`Ativando primeiro evento`)
     }
     
-    return(
+function SegundoEvento(){
+    console.log('Ativando o segundo evento')
+}
+
+return(
         <>
         <p>
             Clique aqui para dispara um evento:</p>
-            <button onClick={meuEvento}>ativar</button>
+           
+           {/*eventos para props*/ }
+            <Button event={meuEvento} text ='Priemiro evento'/>
+            <Button event={SegundoEvento} text ='Segundo evento'/>
+           
         </>
     )
 }
