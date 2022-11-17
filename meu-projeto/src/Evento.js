@@ -1,4 +1,4 @@
-import Button from "./Components/Eventos/Button"
+import Button from "./Components/Button"
 
 function Evento(){
     function meuEvento(){
