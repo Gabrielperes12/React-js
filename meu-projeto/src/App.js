@@ -10,6 +10,13 @@ import SeuNome from './Components/SeuNome';
 import {useState} from 'react'
 import Saudacao from './Components/saudacao';
 
+ /*React-Router*/
+  import {BrowserRouter as Router, Routes ,Switch, Route, Link} from 'react-router-dom'
+  import Home from './Components/pages/Home';
+  import Empresa from './Components/pages/Empresa';
+  import Contato from './Components/pages/Contato';
+ import Navbar from './Components/Layout/Navbar';
+  import Fotter from './Components/Layout/Fotter';
 
 function App() {
 
@@ -33,6 +40,22 @@ function App() {
     <h1>State Lift</h1>
     <SeuNome setNome={setNome}/>
     <Saudacao  nome={nome}/>
+
+     {/*React-Router*/}
+      <Router>
+      <Navbar/>
+      <Routes>
+           <Route path='/' element={<Home/>}/>
+           <Route path='/Empresa' element={<Empresa/>}/>
+           <Route path='/Contato' element={<Contato/>}/>
+
+      </Routes>
+
+      <Fotter/>
+     
+        
+      </Router>
+
     </div>
   );
 }
